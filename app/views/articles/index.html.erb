@@ -1,0 +1,9 @@
+<% 100.times do |i| %>
+  <%= link_to i, root_path(anchor: "ctn_#{i}") %>
+<% end -%>
+
+<% 100.times do |i| %>
+  <div style="height: 100px; border: 1px solid black" id="ctn_<%= i %>">
+    <h1><%= link_to i, root_path(anchor: "ctn_#{i}") %></h1>
+  </div>
+<% end -%>
